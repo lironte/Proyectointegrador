@@ -171,7 +171,7 @@ p{
 }
 
 .container-eventos{
-    background-image: url(/images/eventos.jpg);
+    background-image: url(/Images/eventos.jpg);
     background-size: cover;
     /* padding: 40px; */
     display:flex;
