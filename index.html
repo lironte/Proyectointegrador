@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="index.css">
     <title>Proyecto-Integrador</title>
 </head>
 
@@ -22,10 +23,10 @@
             </div>
 
             <ul class="nav-list">
-                <li><a href="#">Quienes somos?</a></li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Contacto</a></li>
-                </li>
+                <li><a href="#quienesSomos">Quienes somos?</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#quienesSon">Quienes son?</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="login-container">
                 <a class="bttn-nav" title="Registrate gratis" target="_blank" href="#">Registro</a>
@@ -36,8 +37,9 @@
     <main>
         <section>
             <img class="portada" src="./Images/Portada.jpg" alt="portada">
+            <h1 class="titulo">LIRON-MANIAC</h1>
         </section>
-        <section class="qs-container">
+        <section class="qs-container" id="quienesSomos">
             <div class="qs-background">
                 <div class="flex-container">
 
@@ -64,7 +66,7 @@
                     </div>
 
                     <article class="article">
-                        <h2 class="h2">Quienes somos?</h3>
+                        <h3 class="h3">Quienes somos?</h3>
                             <p class="p">Somos un grupo de fanáticos que queremos a los lirones silvestres <em>más que a
                                     nuestras propias familias</em>
                                 y queremos hacer llegar su belleza y su mensaje a todo el mundo.
@@ -74,30 +76,51 @@
             </div>
         </section>
 
-        <section>
+        <section id="eventos">
             <div class="container-eventos">
-                <Article class="article">
-                    <h2 class="h2">Eventos multitudinarios</h2>
-                    <p class="p">La comunidad de <em>lirontiers</em> (así nos llamamos los fanáticos de los lirones) organizamos fiestas multitudinarias donde todos nos disfrazamos de <strong>lirones</strong>, nuestro animal favorito y hacemos distintas actividades. Si quieres se parte de esto solo tienes que registrarte aquí mismo.
-                    </p>
-                    <div class="position-center"><button class="bttn text-bttn">Registrate</button>
-                    </div>
-                </Article>
+                <div class="bg-eventos">
+                    <Article class="article">
+                        <h3 class="h3">Eventos multitudinarios</h3>
+                        <p class="p">La comunidad de <em>lirontiers</em> (así nos llamamos los fanáticos de los lirones)
+                            organizamos fiestas multitudinarias donde todos nos disfrazamos de <strong>lirones</strong>,
+                            <em>"nuestro animal favorito"</em> y hacemos distintas actividades. Si quieres ser parte de esto solo
+                            tienes que registrarte aquí mismo.
+                        </p>
+                        <div class="position-center"><button class="bttn text-bttn">Registrate</button>
+                        </div>
+                    </Article>
 
-                <div class="fotos-eventos">
-                    <img class="img-grid" src="./Images/1er-bloque.jpg" alt="">
-                    <img class="img-grid" src="./Images/" alt="">
-                    <img class="img-grid" src="./Images/3er-bloque.jpg" alt="">
-                    <img class="img-grid" src="./Images/4to-bloque.jpg" alt="">
-                    <img class="img-grid" src="./Images/5to-bloque.jpg" alt="">
-                    <img class="img-grid" src="./Images/6to-bloque.jpg" alt="">
+                    <div class="fotos-eventos">
+                        <img class="img-grid" src="./Images/1er-bloque.jpg" alt="">
+                        <img class="img-grid" src="./Images/2do-bloque.jpg" alt="">
+                        <img class="img-grid" src="./Images/3er-bloque.jpg" alt="">
+                        <img class="img-grid" src="./Images/4to-bloque.jpg" alt="">
+                        <img class="img-grid" src="./Images/5to-bloque.jpg" alt="">
+                        <img class="img-grid" src="./Images/6to-bloque.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <section class="contact-section">
+
+        <section class="subespecies" id=quienesSon>
+            <div class="subesp-container">
+                <h2>Quienes son? Subespecies</h2>
+                <div class="article">
+                    <h3>Lirón Careto</h3>
+                    <img src="https://i.pinimg.com/originals/de/c7/23/dec7234e33dc273434144029ce981b6f.jpg" alt="VictoriaElizabethBlack">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo facilis magni, laboriosam suscipit commodi voluptatum natus, quo, repellat hic doloremque iusto voluptatem modi rem. Tempora deleniti numquam sunt asperiores.</p>
+                </div>
+                <div class="article"></div>
+                <div class="article"></div>
+                <div class="article"></div>
+            </div>
+
+
+        </section>
+
+        <section class="contact-section" id="contacto">
             <div class="contact-form article position-center">
-                <h2 class="h2">Contacto</h3>
+                <h3 class="h3">Contacto</h3>
                     <div><label>Tu Nombre:</label><input type="text"></div>
                     <div><label>Tu Email:</label><input type="text"></div>
                     <div><label>Asunto:</label><input type="text"></div>
@@ -105,14 +128,20 @@
                     <div><input class="bttn-nav" type='submit' value='Envia Mensaje'></div>
             </div>
             <div class="article position center">
-                <h2>Donaciones</h2>
-                <p>Sabias que tú puedes ayudarnos? Puedes hacer donaciones para ayudarnos a llegar a más personas y que todos puedan <em>apreciar la verdadera belleza</em>. Estos dulces animalitos merecen ser reconocidos por todas y cada una de las personas del mundo. Ayudanos a crecer y vivir emocionantes aventuras con nosotros. Doná ahora!</p>
+                <h3>Donaciones</h3>
+                <p>Sabias que tú puedes ayudarnos? Puedes hacer donaciones para ayudarnos a llegar a más personas y que
+                    todos puedan <em>apreciar la verdadera belleza</em>. Estos dulces animalitos merecen ser reconocidos
+                    por todas y cada una de las personas del mundo. Ayudanos a crecer y vivir emocionantes aventuras con
+                    nosotros. Doná ahora!</p>
             </div>
-            
-            
+
+
             <div class="article position-center">
-                <h2>Dónde nos encontramos?</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7736497.735123802!2d42.373867432487714!3d-18.77198556837133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21d1a4e3ea238545%3A0x5244e3c1977b1388!2sMadagascar!5e0!3m2!1ses-419!2sar!4v1623957559601!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                <h3>Dónde nos encontramos?</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7736497.735123802!2d42.373867432487714!3d-18.77198556837133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21d1a4e3ea238545%3A0x5244e3c1977b1388!2sMadagascar!5e0!3m2!1ses-419!2sar!4v1623957559601!5m2!1ses-419!2sar"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
 
     </main>

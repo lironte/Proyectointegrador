@@ -14,32 +14,67 @@ header{
     src: url(./fonts/Hello\ Avocado.ttf);
 }
 
-/* ancho */
+
+
+
 .nav-bar{
     display: flex;
     background-color: #00CCFF;
-    opacity: 90%;
+    opacity: 95%;
     height: 100px;
     width: 80%;
     margin:auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    
 }
+
 .logo-container{
     display: flex;
     width: 20%;
     height: 100%;
-    float: left;
-    text-decoration: none;
     align-items: center;
     justify-content: center;
+    
+}
+h1{
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    top: 200px;
+    font-family: hello-avocado;
+    font-size: 5em;
+    color:rgb(255,204,51);
+    text-shadow: -2px 2px 0px rgba(0,0,0,0.6);
+    text-shadow: 2px - 2px 0px rgba(87, 141, 185, 1);
+    text-align: center;
+    z-index: 1;
 }
 
 .logo{
-    height: 90px;
-
+    height: 80px;
+    animation-name: logo-twist;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes logo-twist {
+0%{transform: rotate(0deg);}    
+10%{transform: rotate(-5deg);}
+20%{transform: rotate(5deg);}
+30%{transform: rotate(-10deg);}
+40%{transform: rotate(10deg);}
+50%{transform: rotate(-10deg);}
+60%{transform: rotate(10deg);}
+70%{transform: rotate(-10deg);}
+80%{transform: rotate(5deg);}
+90%{transform: rotate(-5deg);}
+100%{transform: rotate(0deg);}
+}
+
+
+
 a {text-decoration: none;}
 li {list-style: none;}
 
@@ -81,7 +116,7 @@ li {list-style: none;}
     text-shadow: #e0e0e0 1px 1px 0;
     font-family: hello-avocado;
     color: rgb(0, 114, 255);
-    font-size: 30px;
+    font-size: 2em;
     
 }
 /* navpropiedadesde color y forma */
@@ -106,6 +141,90 @@ li a:hover{
     color: #ffffff;
 }
 
+@media (max-width: 900px) and (min-width:680px){
+    .nav-bar{
+        margin: 0px;
+        width:100%;
+    
+    }
+    header{
+        margin-top: 0px;
+    }
+    .nav-list li a{
+        font-size: 1.4em;
+    }
+
+    .bttn-nav {font-size: 1.4em;}
+
+    .logo{
+        width: 90%;
+    }
+}
+
+@media (max-width: 679px) and (min-width: 451px){
+    .nav-bar{
+        margin: 0px;
+        width: 100%;
+        border-radius: 0px;
+        height: 60px;
+    }
+    header{
+        margin-top: 0px;
+    }
+    .nav-list{
+        width: 100%;
+       }
+
+    .nav-list li a{
+        font-size: 1.2em;
+        margin: 0px;
+        padding: 3px;
+        width: 100%;
+    }
+
+    .login-container {
+        display: none;
+    }
+
+    .logo{
+        width: 40px;
+    }
+
+    .logo-container{
+        width: 10%;
+    }
+}
+
+@media (max-width: 450px){
+    
+    header{
+        margin-top: 0px;
+    }
+    .nav-list{
+     width: 100%;
+    }
+
+    .nav-list li a{
+        font-size: 1.1em;
+        margin: 0px;
+        padding: 3px;
+    }
+
+    .nav-bar{
+        margin: 0px;
+        width:100%;
+        border-radius: 0px;
+        height: 50px;
+    }
+
+    .login-container {
+        display: none;
+    }
+
+    .logo-container{
+        display: none;
+    }
+}
 /* .button{
     
 } */
@@ -146,6 +265,8 @@ li a:hover{
 }
 
 .article{
+    display: flex;
+    flex-direction: column;
     margin: 40px;
     height: auto;
     max-width: 350px;
@@ -155,8 +276,17 @@ li a:hover{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
-h2{
+h2{font-family: hello-avocado;
+    font-size: 5em;
+    margin-top: 24px;
+    color: rgb(0, 204, 255);
+    text-shadow: -2px 2px 0px rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+h3{
     font-family: hello-avocado;
+    font-size: 3em;
     margin-top: 24px;
     text-decoration: none;
     color:rgb(255,204,51);
@@ -173,14 +303,18 @@ p{
 .container-eventos{
     background-image: url(/Images/eventos.jpg);
     background-size: cover;
-    /* padding: 40px; */
+}
+
+
+.bg-eventos{
+    background-image: linear-gradient(0deg, rgba(255,204,51,1) 0%, rgba(255,204,51,1) 10%, rgba(255,204,51,0) 20%, rgba(0,114,255,0) 80%, rgba(0,114,255,1) 90%, rgba(0,114,255,1) 100%);
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     align-items: center;
-    padding-top: 60px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     z-index: 2;
 }
 
@@ -234,6 +368,14 @@ p{
     padding: 30px;
 }
     */
+.subespecies{
+    background-color: rgb(255,204,51);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 100px;
+    justify-content: space-around;
+}
 
 .contact-form{
     display: block;
@@ -265,6 +407,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background-color: rgb(255,204,51);
+    padding-top: 100px;
+    background-image: url(./Images/contacto.jpg);
     justify-content: space-around;
 }
