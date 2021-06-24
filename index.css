@@ -14,8 +14,38 @@ header{
     src: url(./fonts/Hello\ Avocado.ttf);
 }
 
+h1{
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    top: 200px;
+    font-family: hello-avocado;
+    font-size: 5em;
+    color:rgb(255,204,51);
+    text-shadow: -2px 2px 0px rgba(0,0,0,0.6);
+    text-align: center;
+    animation-name: h1-twist;
+    animation-delay: 2s;
+    animation-direction: reverse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+}
 
-
+@keyframes h1-twist {
+    0%{transform: rotate(0deg);}    
+    10%{transform: rotate(-1deg);}
+    20%{transform: rotate(2deg);}
+    30%{transform: rotate(-3deg);}
+    40%{transform: rotate(4deg);}
+    50%{transform: rotate(-4deg);}
+    60%{transform: rotate(4deg);}
+    70%{transform: rotate(-3deg);}
+    80%{transform: rotate(2deg);}
+    90%{transform: rotate(-1deg);}
+    100%{transform: rotate(0deg);}
+    }
 
 .nav-bar{
     display: flex;
@@ -36,19 +66,7 @@ header{
     justify-content: center;
     
 }
-h1{
-    width: 100%;
-    position: absolute;
-    margin: auto;
-    top: 200px;
-    font-family: hello-avocado;
-    font-size: 5em;
-    color:rgb(255,204,51);
-    text-shadow: -2px 2px 0px rgba(0,0,0,0.6);
-    text-shadow: 2px - 2px 0px rgba(87, 141, 185, 1);
-    text-align: center;
-    z-index: 1;
-}
+
 
 .logo{
     height: 80px;
